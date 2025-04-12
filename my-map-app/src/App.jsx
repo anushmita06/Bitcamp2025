@@ -1,8 +1,8 @@
 import React from 'react';
-import MapView from './components/MapView';
 import TopBar from './components/TopBar';
 import SearchBar from './components/SearchBar';
 import RecentsDropdown from './components/RecentsDropdown';
+import MapView from './components/MapView';
 
 function App() {
   return (
@@ -10,7 +10,9 @@ function App() {
       <TopBar />
       <SearchBar />
       <RecentsDropdown />
-      <MapView />
+      <div className="flex-1 relative">
+        <MapView />
+      </div>
     </div>
   );
 }
