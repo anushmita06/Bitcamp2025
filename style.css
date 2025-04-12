@@ -1,0 +1,29 @@
+/* Reset margin and padding for full screen map */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Full-screen map container */
+  #map {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Optional: Popup styling (Leaflet) */
+  .leaflet-popup-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Optional: Add more styling later for UI controls */
+  button, select {
+    font-family: inherit;
+    padding: 6px 10px;
+    font-size: 14px;
+    margin: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
