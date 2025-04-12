@@ -1,12 +1,14 @@
 import React from 'react';
+import { FaSearch } from 'react-icons/fa';
 
 function SearchBar() {
   return (
-    <div className="px-4 pt-2 pb-1 bg-white z-10">
+    <div className="bg-white/80 px-4 py-3 rounded-xl flex items-center shadow backdrop-blur-md">
+      <FaSearch className="text-gray-500 mr-3" />
       <input
         type="text"
-        placeholder="Search or enter address"
-        className="w-full px-4 py-2 rounded-xl border bg-gray-100 text-sm shadow-sm outline-none"
+        placeholder="Where to?"
+        className="bg-transparent outline-none text-sm w-full"
       />
     </div>
   );
