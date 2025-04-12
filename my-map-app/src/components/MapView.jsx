@@ -1,31 +1,82 @@
-import React from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
-import L from 'leaflet';
+import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import { useEffect, useState } from 'react';
+import L from 'leaflet';
 
-// Fix default marker icons
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
-  iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
-});
+function SafetyMarkers() {
+  const map = useMap();
+
+  useEffect(() => {
+    fetch('/safety.geojson')
+      .then(res => res.json())
+      .then((safetyData) => {
+        console.log("Loaded safety markers:", safetyData.features.length);
+        L.geoJSON(safetyData, {
+          pointToLayer: (feature, latlng) =>
+            L.circleMarker(latlng, {
+              radius: 5,
+              fillColor: '#007bff',
+              color: '#007bff',
+              weight: 1,
+              opacity: 5,
+              fillOpacity: 0.8
+            }).bindPopup("🛟 Safety Resource")
+        }).addTo(map);
+      });
+  }, [map]);
+
+  return null;
+}
 
 function MapView() {
-  const center = [38.9897, -76.9378]; // fallback to UMD coords
+  const [geoData, setGeoData] = useState(null);
+
+  useEffect(() => {
+    fetch('/enrichedPaths.geojson')
+      .then((res) => res.json())
+      .then((data) => setGeoData(data));
+  }, []);
 
   return (
     <MapContainer
-      center={center}
+      center={[38.9869, -76.9426]}
       zoom={16}
+      className="h-full w-full"
       scrollWheelZoom={true}
-      className="absolute top-0 left-0 h-full w-full z-0"
     >
       <TileLayer
-        attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
-        url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution="&copy; OpenStreetMap contributors"
       />
-      <Marker position={center} />
+
+      <SafetyMarkers />
+
+      {geoData && (
+        <GeoJSON
+          data={geoData}
+          style={(feature) => ({
+            color: feature.properties.steep ? 'red' :
+                   feature.properties.shaded ? 'green' :
+                   feature.properties.food_nearby ? 'orange' :
+                   'gray',
+            weight: 4
+          })}
+          onEachFeature={(feature, layer) => {
+            const tags = [];
+
+            if (feature.properties.steep) tags.push("⛰️ Steep");
+            if (feature.properties.shaded) tags.push("🌳 Shaded");
+            if (feature.properties.food_nearby) tags.push("🍔 Food Nearby");
+            if (feature.properties.safe) tags.push("🛟 Near Safety Resource");
+
+            const message = tags.length > 0
+              ? `<b>Tags:</b><br>${tags.join("<br>")}`
+              : `No tags for this path`;
+
+            layer.bindPopup(message);
+          }}
+        />
+      )}
     </MapContainer>
   );
 }

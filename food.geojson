@@ -1,0 +1,1787 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-04-12T18:13:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1419137214",
+        "addr:city": "College Park",
+        "addr:state": "MD",
+        "addr:street": "7422",
+        "amenity": "fast_food",
+        "brand": "Potbelly",
+        "brand:wikidata": "Q7234777",
+        "cuisine": "sandwich",
+        "drive_through": "no",
+        "name": "Potbelly",
+        "official_name": "Potbelly Sandwich Works",
+        "opening_hours": "Su-Th 11:00-21:00; Fr,Sa 11:00-22:00",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.938122,
+          38.981734
+        ]
+      },
+      "id": "node/1419137214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2352439085",
+        "addr:city": "College Park",
+        "addr:housenumber": "7332",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "fast_food",
+        "brand": "Chipotle",
+        "brand:wikidata": "Q465751",
+        "cuisine": "mexican",
+        "drive_through": "no",
+        "name": "Chipotle",
+        "official_name": "Chipotle Mexican Grill",
+        "opening_hours": "Mo-Su 10:45-22:00",
+        "outdoor_seating": "no",
+        "phone": "+1 240-582-0015",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://locations.chipotle.com/md/college-park/7332-baltimore-ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9389505,
+          38.980471
+        ]
+      },
+      "id": "node/2352439085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2710354670",
+        "addr:city": "College Park",
+        "addr:housenumber": "3711",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Campus Drive",
+        "addr:unit": "E",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "check_date": "2023-05-17",
+        "cuisine": "sandwich",
+        "drive_through": "no",
+        "name": "Subway",
+        "phone": "+1 240-667-2544",
+        "smoking": "no",
+        "source": "Personal Experience",
+        "takeaway": "yes",
+        "website": "https://restaurants.subway.com/united-states/md/college-park/3711-campus-drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9493529,
+          38.9845704
+        ]
+      },
+      "id": "node/2710354670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695855183",
+        "addr:city": "College Park",
+        "addr:housenumber": "4511",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "College Avenue",
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name": "Aroy Thai Restaurant",
+        "opening_hours": "Mo-Fr 11:30-22:00; Sa 12:00-22:00; Su 16:30-22:00",
+        "phone": "+1-301-864-5550",
+        "website": "http://www.aroythairestaurant.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9370898,
+          38.9818413
+        ]
+      },
+      "id": "node/3695855183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695870152",
+        "addr:city": "College Park",
+        "addr:housenumber": "4505",
+        "addr:state": "MD",
+        "addr:street": "College Avenue",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Wasabi Bistro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9373522,
+          38.9819044
+        ]
+      },
+      "id": "node/3695870152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695870153",
+        "addr:city": "College Park",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "brand": "Papa John's",
+        "brand:wikidata": "Q2759586",
+        "cuisine": "pizza",
+        "drive_through": "no",
+        "name": "Papa John's",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9372173,
+          38.9818697
+        ]
+      },
+      "id": "node/3695870153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3695870156",
+        "addr:city": "College Park",
+        "addr:housenumber": "7419",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "brand": "Blaze Pizza",
+        "brand:wikidata": "Q23016666",
+        "cuisine": "pizza",
+        "name": "Blaze Pizza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9375776,
+          38.9817831
+        ]
+      },
+      "id": "node/3695870156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3732014189",
+        "addr:city": "College Park",
+        "addr:housenumber": "8150",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "cafe",
+        "cafe": "board_game",
+        "contact:instagram": "theboardandbrew",
+        "name": "The Board and Brew - a board game cafe",
+        "phone": "+1-240-542-4613",
+        "smoking": "no",
+        "website": "https://www.theboardandbrew.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9338748,
+          38.9915708
+        ]
+      },
+      "id": "node/3732014189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3790825465",
+        "addr:city": "College Park",
+        "addr:housenumber": "4509",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Knox Road",
+        "amenity": "restaurant",
+        "cuisine": "pizza;italian",
+        "name": "Ledo Restaurant",
+        "outdoor_seating": "no",
+        "phone": "+1 301-422-8122",
+        "smoking": "no",
+        "website": "https://order.ledopizza.com/menu/ledo-pizza-college-park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9369286,
+          38.9805624
+        ]
+      },
+      "id": "node/3790825465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3825814677",
+        "addr:city": "College Park",
+        "addr:housenumber": "7316",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "fast_food",
+        "brand": "Panda Express",
+        "brand:wikidata": "Q1358690",
+        "cuisine": "chinese",
+        "drive_through": "no",
+        "name": "Panda Express",
+        "opening_hours": "Mo-Th 10:30-22:30; Fr 10:00-23:30; Sa 10:30-23:30; Su 10:30-22:00",
+        "phone": "+1 301-209-7501",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9388311,
+          38.9800123
+        ]
+      },
+      "id": "node/3825814677"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3996545357",
+        "addr:city": "College Park",
+        "addr:housenumber": "3711",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Campus Drive",
+        "amenity": "fast_food",
+        "cuisine": "taiwanese;bubble_tea",
+        "drive_through": "no",
+        "name": "Jumbo Jumbo Cafe",
+        "opening_hours": "10:30 - 22:00",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.jumbojumbocafe.com/fourth-store"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.949435,
+          38.9845617
+        ]
+      },
+      "id": "node/3996545357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4102660478",
+        "addr:city": "College Park",
+        "addr:housenumber": "7336",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "cafe",
+        "branch": "Route 1&Knox-College Park Shpng C",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 06:00-21:00; Sa,Su 07:00-21:00",
+        "outdoor_seating": "no",
+        "phone": "+1 301-277-0106",
+        "ref": "9763",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/9763/rt-1-knox-college-park-shpng-c-7336-baltimore-avenue-college-park-md-207403206-us"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9389638,
+          38.9805364
+        ]
+      },
+      "id": "node/4102660478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4102660479",
+        "addr:city": "College Park",
+        "addr:housenumber": "8150",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name": "NuVegan Cafe",
+        "phone": "+1-202-232-1700",
+        "takeaway": "yes",
+        "website": "https://www.ilovenuvegan.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9339438,
+          38.9914228
+        ]
+      },
+      "id": "node/4102660479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4102660480",
+        "addr:city": "College Park",
+        "addr:housenumber": "8300",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "delivery": "no",
+        "name": "Shanghai Tokyo Cafe",
+        "phone": "+1 301 220 1998",
+        "website": "https://www.shanghaitokyocafemd.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9334842,
+          38.992562
+        ]
+      },
+      "id": "node/4102660480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701293",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "BRBean cafe",
+        "phone": "+1-301-405-4102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9427761,
+          38.9888448
+        ]
+      },
+      "id": "node/4288701293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701294",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Physics cafe",
+        "phone": "+1-301-314-7466"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.940215,
+          38.988427
+        ]
+      },
+      "id": "node/4288701294"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701296",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Kim Kafe",
+        "phone": "+1-301-314-8981"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9380481,
+          38.9909529
+        ]
+      },
+      "id": "node/4288701296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701297",
+        "amenity": "cafe",
+        "cuisine": "smoothie",
+        "name": "Sneaker's cafe",
+        "opening_hours": "Tu-Fr 10:30-22:30; Mo 10:00-22:00; Sa 10:30-21:00; Su 12:00-21:00",
+        "phone": "+1-301-404-1460",
+        "website": "https://dining.umd.edu/hours-locations/cafes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9451037,
+          38.9935957
+        ]
+      },
+      "id": "node/4288701297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701298",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Applause cafe",
+        "phone": "+1-301-314-6592"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9507535,
+          38.9907606
+        ]
+      },
+      "id": "node/4288701298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701299",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Footnotes Cafe",
+        "phone": "+1-301-314-0371"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9447976,
+          38.9860756
+        ]
+      },
+      "id": "node/4288701299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701300",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Off the Record",
+        "phone": "+1-301-314-0412"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.948345,
+          38.986977
+        ]
+      },
+      "id": "node/4288701300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701301",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Creative Commons cafe",
+        "phone": "+1-301-314-2119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9485447,
+          38.985874
+        ]
+      },
+      "id": "node/4288701301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4288701302",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Rudy's Cafe",
+        "phone": "+1-301-314-8181"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9476547,
+          38.9828529
+        ]
+      },
+      "id": "node/4288701302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5758964419",
+        "addr:city": "College Park",
+        "addr:housenumber": "4211",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Knox Road",
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "cuisine": "donut;coffee_shop",
+        "drive_through": "no",
+        "name": "Dunkin'",
+        "opening_hours": "07:00-19:00",
+        "phone": "+1 240-615-8101",
+        "ref": "357400",
+        "takeaway": "yes",
+        "website": "https://locations.dunkindonuts.com/en/md/college-park/4211-knox-rd/357400"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9422467,
+          38.9809275
+        ]
+      },
+      "id": "node/5758964419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5758971021",
+        "addr:city": "College Park",
+        "addr:housenumber": "7412",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "contact:yelp": "https://www.yelp.com/biz/marathon-deli-college-park",
+        "email": "marathondeli4429@gmail.com",
+        "name": "Marathon Deli",
+        "phone": "+1 301-927-6717",
+        "website": "https://www.marathondelimd.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9381326,
+          38.9813295
+        ]
+      },
+      "id": "node/5758971021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6135429749",
+        "addr:city": "College Park",
+        "addr:housenumber": "7350",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "brand": "CAVA",
+        "brand:wikidata": "Q85751038",
+        "cuisine": "mediterranean",
+        "name": "CAVA",
+        "opening_hours": "Mo-Su 10:45-22:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9390171,
+          38.9807244
+        ]
+      },
+      "id": "node/6135429749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6135438053",
+        "addr:city": "College Park",
+        "addr:housenumber": "7406",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "cuisine": "hibachi",
+        "name": "QU Japan",
+        "opening_hours": "Mo-Sa 11:00-21:30; Su 12:00-21:30",
+        "outdoor_seating": "no",
+        "phone": "+1 240-467-3332",
+        "website": "https://www.qujapancollegepark.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9381035,
+          38.9811411
+        ]
+      },
+      "id": "node/6135438053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6468287382",
+        "addr:city": "College Park",
+        "addr:housenumber": "7320",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "brand": "Noodles & Company",
+        "brand:wikidata": "Q7049673",
+        "cuisine": "pasta",
+        "name": "Noodles & Company",
+        "opening_hours": "Mo-Th,Su 10:30-22:00; Fr-Sa 10:30-23:00",
+        "outdoor_seating": "no",
+        "phone": "+1 301-779-5300",
+        "website": "https://locations.noodles.com/md/college-park/7320-baltimore-avenue.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9389824,
+          38.9801259
+        ]
+      },
+      "id": "node/6468287382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6484703965",
+        "addr:city": "College Park",
+        "addr:housenumber": "7777",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Potomac Pizza",
+        "opening_hours": "Su-Th 11:00-23:00; Fr,Sa 11:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-240-582-5242",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.potomacpizza.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9354991,
+          38.9874925
+        ]
+      },
+      "id": "node/6484703965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6484703966",
+        "addr:city": "College Park",
+        "addr:housenumber": "7777",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "check_date": "2024-03-13",
+        "cuisine": "bagel",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Bagels 'n Grinds",
+        "opening_hours": "Mo-Su 07:00-14:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-240-582-5475",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.bagelsngrinds.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9358717,
+          38.9869491
+        ]
+      },
+      "id": "node/6484703966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6514225815",
+        "addr:city": "College Park",
+        "addr:housenumber": "7313",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "I",
+        "amenity": "cafe",
+        "brand": "Kung Fu Tea",
+        "brand:wikidata": "Q66023886",
+        "cuisine": "bubble_tea",
+        "name": "Kung Fu Tea",
+        "opening_hours": "Mo-Su 12:00-21:00",
+        "phone": "+1 240-714-3156",
+        "takeaway": "yes",
+        "website": "https://www.kungfutea.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9376955,
+          38.9801405
+        ]
+      },
+      "id": "node/6514225815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6514225816",
+        "addr:city": "College Park",
+        "addr:housenumber": "7313",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "E",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Northwest Chinese",
+        "opening_hours": "We-Su 11:30-15:00,17:00-20:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9376952,
+          38.979934
+        ]
+      },
+      "id": "node/6514225816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6514225817",
+        "addr:city": "College Park",
+        "addr:housenumber": "7313",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "F",
+        "amenity": "restaurant",
+        "cuisine": "noodle",
+        "name": "Pho Tom",
+        "opening_hours": "We-Mo 11:00-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.937695,
+          38.9800106
+        ]
+      },
+      "id": "node/6514225817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6530465504",
+        "addr:city": "College Park",
+        "addr:housenumber": "3972",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "addr:street": "Campus Drive",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "cuisine": "coffee",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "The Coffee Bar",
+        "outdoor_seating": "yes",
+        "website": "https://thestamp.umd.edu/food_shops_and_services/stamp_dining/the_coffee_bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9446488,
+          38.9878047
+        ]
+      },
+      "id": "node/6530465504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532369065",
+        "addr:city": "College Park",
+        "addr:housenumber": "4200",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Guilford Drive",
+        "addr:unit": "B2",
+        "amenity": "restaurant",
+        "cuisine": "korean",
+        "name": "Seoul Spice",
+        "takeaway": "yes",
+        "website": "https://www.seoulspice.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9425684,
+          38.9804205
+        ]
+      },
+      "id": "node/6532369065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532369066",
+        "addr:city": "College Park",
+        "addr:housenumber": "4200",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Hartwick Road",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "fried_chicken",
+        "delivery": "yes",
+        "name": "Wings Over College Park",
+        "phone": "+1-828-8158",
+        "takeaway": "yes",
+        "website": "https://www.wingsover.com/locations/wings-over-college-park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9418178,
+          38.980218
+        ]
+      },
+      "id": "node/6532369066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410069",
+        "addr:city": "College Park",
+        "addr:housenumber": "3972",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "addr:street": "Campus Drive",
+        "amenity": "fast_food",
+        "branch": "University of Maryland-College Park",
+        "brand": "Chick-fil-A",
+        "brand:wikidata": "Q491516",
+        "cuisine": "chicken",
+        "delivery": "no",
+        "drive_through": "no",
+        "indoor_seating": "no",
+        "name": "Chick-fil-A",
+        "opening_hours": "Mo-Fr 08:30-20:30; Sa 09:00-20:30; Su off",
+        "phone": "+1 301-314-6568",
+        "ref": "80355",
+        "takeaway": "yes",
+        "website": "https://www.chick-fil-a.com/locations/md/university-of-maryland-college-park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9447654,
+          38.9882083
+        ]
+      },
+      "id": "node/6532410069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410070",
+        "addr:city": "College Park",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "cuisine": "poke",
+        "drive_through": "no",
+        "name": "Hibachi San",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9447654,
+          38.9881758
+        ]
+      },
+      "id": "node/6532410070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410071",
+        "addr:city": "College Park",
+        "addr:housenumber": "3972",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "addr:street": "Campus Drive",
+        "amenity": "fast_food",
+        "branch": "University of Maryland",
+        "brand": "Panda Express",
+        "brand:wikidata": "Q1358690",
+        "cuisine": "chinese",
+        "drive_through": "no",
+        "name": "Panda Express",
+        "opening_hours": "Mo-Fr 09:30-19:30; Sa-Su 11:30-17:00",
+        "phone": "+1 301-314-3025",
+        "takeaway": "yes",
+        "website": "https://www.pandaexpress.com/locations/md/college-park/802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9447628,
+          38.988112
+        ]
+      },
+      "id": "node/6532410071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410072",
+        "addr:city": "College Park",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "cuisine": "sandwich",
+        "drive_through": "no",
+        "name": "Subway",
+        "note": "Basement",
+        "opening_hours": "Mo-Fr 11:00-15:00",
+        "phone": "+1 301-226-7827",
+        "takeaway": "yes",
+        "website": "https://restaurants.subway.com/united-states/md/college-park/terp-zone-food-crt-of-stamp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.945126,
+          38.9881852
+        ]
+      },
+      "id": "node/6532410072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410073",
+        "addr:city": "College Park",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "drive_through": "no",
+        "name": "Moby Dick",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9445273,
+          38.9881475
+        ]
+      },
+      "id": "node/6532410073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410074",
+        "addr:city": "College Park",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "brand": "Sbarro",
+        "brand:wikidata": "Q2589409",
+        "cuisine": "pizza",
+        "drive_through": "no",
+        "name": "Sbarro",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9445259,
+          38.9881099
+        ]
+      },
+      "id": "node/6532410074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410075",
+        "addr:city": "College Park",
+        "addr:housenumber": "214",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "addr:street": "Campus Drive",
+        "amenity": "fast_food",
+        "brand": "Saladworks",
+        "brand:wikidata": "Q7403411",
+        "cuisine": "salad",
+        "drive_through": "no",
+        "name": "Saladworks",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.94453,
+          38.9881946
+        ]
+      },
+      "id": "node/6532410075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532410076",
+        "addr:city": "College Park",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "cuisine": "burger",
+        "drive_through": "no",
+        "fixme:atp": "Check if still exists. No corresponding ATP object.",
+        "name": "McDonald's",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9445327,
+          38.9882438
+        ]
+      },
+      "id": "node/6532410076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6532427257",
+        "addr:city": "College Park",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "amenity": "cafe",
+        "check_date": "2023-04-25",
+        "name": "Casey's Coffee",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9492926,
+          38.9845817
+        ]
+      },
+      "id": "node/6532427257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6534443604",
+        "addr:city": "College Park",
+        "addr:housenumber": "7312",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "brand": "Domino's",
+        "brand:wikidata": "Q839466",
+        "cuisine": "pizza",
+        "drive_through": "no",
+        "name": "Domino's",
+        "opening_hours": "Su-Th 10:00-02:00, Fr,Sa 10:00-03:00",
+        "phone": "+1 301-852-3030",
+        "ref": "4649",
+        "short_name": "Domino's",
+        "takeaway": "yes",
+        "website": "https://pizza.dominos.com/maryland/college-park/7312-baltimore-ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9385122,
+          38.9799734
+        ]
+      },
+      "id": "node/6534443604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6537426898",
+        "addr:city": "College Park",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:wikidata": "Q244457",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "opening_hours": "Mo-Th 07:00-17:00; Fr 07:00-16:00",
+        "phone": "+1 301-314-9956",
+        "takeaway": "yes",
+        "website": "https://restaurants.subway.com/united-states/md/college-park/regents-drive"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.938907,
+          38.9887414
+        ]
+      },
+      "id": "node/6537426898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541125709",
+        "addr:city": "College Park",
+        "addr:housenumber": "7313",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "H",
+        "amenity": "restaurant",
+        "cuisine": "colombian",
+        "name": "Ritchie's Colombian Restaurant",
+        "opening_hours": "We-Su 11:30-21:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9377037,
+          38.9800997
+        ]
+      },
+      "id": "node/6541125709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541138799",
+        "addr:city": "College Park",
+        "addr:housenumber": "4507",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "College Avenue",
+        "amenity": "fast_food",
+        "brand": "Playa Bowls",
+        "brand:wikidata": "Q114618507",
+        "cuisine": "açaí",
+        "name": "Playa Bowls",
+        "opening_hours": "08:00-21:00",
+        "phone": "+1 304-851-5378",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9372886,
+          38.9818727
+        ]
+      },
+      "id": "node/6541138799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541143347",
+        "addr:housenumber": "7313",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "A",
+        "amenity": "restaurant",
+        "name": "The Jerk Hut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.937704,
+          38.9797024
+        ]
+      },
+      "id": "node/6541143347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541147537",
+        "addr:city": "College Park",
+        "addr:housenumber": "4439",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Lehigh Road",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/pizzakingdom",
+        "contact:twitter": "https://twitter.com/PizzaKingdom",
+        "cuisine": "pizza",
+        "name": "Pizza Kingdom",
+        "phone": "+1 301 927 7777",
+        "website": "https://www.pizzakingdom.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9383229,
+          38.9817178
+        ]
+      },
+      "id": "node/6541147537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541147603",
+        "addr:housenumber": "7313",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "G",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Ivy Noodles",
+        "opening_hours": "We-Sa 11:00-20:30; Su 11:30-20:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9377078,
+          38.9800682
+        ]
+      },
+      "id": "node/6541147603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541148239",
+        "amenity": "restaurant",
+        "name": "Cluckster's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9375534,
+          38.9815272
+        ]
+      },
+      "id": "node/6541148239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6541152927",
+        "addr:housenumber": "7313",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "C",
+        "amenity": "restaurant",
+        "name": "Chicken La Rock",
+        "opening_hours": "We-Sa 11:00-20:00; Su 11:00-19:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9377296,
+          38.9798152
+        ]
+      },
+      "id": "node/6541152927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6547741178",
+        "amenity": "cafe",
+        "level": "0",
+        "name": "Quantum cafe",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9414399,
+          38.9908863
+        ]
+      },
+      "id": "node/6547741178"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6547838710",
+        "amenity": "cafe",
+        "name": "Breakpoint Cafe",
+        "name:etymology:wikidata": "Q634179",
+        "source:name:etymology": "https://today.umd.edu/briefs/breakpoint-cafe-fully-open-iribe-center-5112b9be-67d1-43d4-903e-1f70e1002834"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9363546,
+          38.9892077
+        ]
+      },
+      "id": "node/6547838710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6549793428",
+        "addr:state": "MD",
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "email": "info@OldMarylandGrill.com",
+        "name": "Old Maryland Grill",
+        "opening_hours": "07:00-20:00",
+        "phone": "+1-301-995-3413",
+        "website": "https://www.thehotelumd.com/dining/old-maryland-grill/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.935586,
+          38.9873657
+        ]
+      },
+      "id": "node/6549793428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6573548978",
+        "addr:city": "College Park",
+        "addr:country": "US",
+        "addr:housenumber": "8300",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "fast_food",
+        "brand": "Sweetgreen",
+        "brand:wikidata": "Q18636413",
+        "cuisine": "salad",
+        "name": "Sweetgreen",
+        "opening_hours": "10:30-22:00",
+        "phone": "+1--240-770-4443",
+        "takeaway": "yes",
+        "website": "https://www.sweetgreen.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9335839,
+          38.9922712
+        ]
+      },
+      "id": "node/6573548978"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6573555621",
+        "addr:city": "College Park",
+        "addr:country": "US",
+        "addr:housenumber": "8321",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "name": "College Park Grill",
+        "opening_hours": "Su-Th 07:00-22:00, Fr-Sa 07:00-23:00",
+        "phone": "+1-301-474-4745",
+        "website": "https://www.collegeparkgrill.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9326036,
+          38.9932156
+        ]
+      },
+      "id": "node/6573555621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6637512134",
+        "amenity": "cafe",
+        "name": "E+M Cafe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9389215,
+          38.9888814
+        ]
+      },
+      "id": "node/6637512134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6637512137",
+        "amenity": "restaurant",
+        "name": "251 North",
+        "opening_hours": "Mo-Su 08:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9495793,
+          38.9924964
+        ]
+      },
+      "id": "node/6637512137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6684622972",
+        "addr:housenumber": "3501",
+        "addr:street": "University Boulevard",
+        "amenity": "restaurant",
+        "name": "The Common",
+        "website": "https://modules.marriott.com/hotel-restaurants/wasum-college-park-marriott-hotel-and-conference-center/the-common/5515779/home-page"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9544791,
+          38.9859894
+        ]
+      },
+      "id": "node/6684622972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6914307066",
+        "addr:city": "College Park",
+        "addr:housenumber": "1150",
+        "addr:postcode": "20742",
+        "addr:state": "MD",
+        "addr:street": "South Campus Dining Hall",
+        "amenity": "fast_food",
+        "brand": "Taco Bell",
+        "brand:wikidata": "Q752941",
+        "cuisine": "tex-mex",
+        "delivery": "no",
+        "drive_through": "no",
+        "internet_access": "yes",
+        "name": "Taco Bell",
+        "outdoor_seating": "no",
+        "phone": "+1 301-314-8037",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://locations.tacobell.com/md/college-park/1150-south-campus-dining-hall.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9389564,
+          38.988723
+        ]
+      },
+      "id": "node/6914307066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8455726683",
+        "amenity": "restaurant",
+        "brand": "Paisano's Pizza",
+        "brand:wikidata": "Q116920823",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "name": "Paisano's Pizza",
+        "opening_hours": "Su-Th 11:00-22:00; Fr,Sa 11:00-23:00",
+        "takeaway": "yes",
+        "website": "https://paisanospizza.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9376475,
+          38.9778261
+        ]
+      },
+      "id": "node/8455726683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8455726699",
+        "addr:city": "College Park",
+        "addr:housenumber": "7346",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "fast_food",
+        "branch": "7346 Baltimore Avenue",
+        "brand": "Five Guys",
+        "brand:wikidata": "Q1131810",
+        "cuisine": "burger",
+        "name": "Five Guys",
+        "official_name": "Five Guys Burgers and Fries",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "phone": "+1 240-828-8515",
+        "takeaway": "yes",
+        "website": "https://restaurants.fiveguys.com/7346-baltimore-avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9390122,
+          38.9806416
+        ]
+      },
+      "id": "node/8455726699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8592736861",
+        "addr:city": "College Park",
+        "addr:housenumber": "4656",
+        "addr:postcode": "20742",
+        "addr:street": "Hotel Drive",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/thehallcp",
+        "contact:instagram": "https://www.instagram.com/thehallcp",
+        "email": "events@thehallcp.com",
+        "name": "The Hall CP",
+        "opening_hours": "Mo-Th 16:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00; Su 10:00-21:00",
+        "phone": "+1 301-264-7644",
+        "reservation": "yes",
+        "website": "https://thehallcp.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9337656,
+          38.986095
+        ]
+      },
+      "id": "node/8592736861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8975759235",
+        "amenity": "fast_food",
+        "brand": "&pizza",
+        "brand:wikidata": "Q21189222",
+        "cuisine": "pizza",
+        "name": "&pizza",
+        "takeaway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9381719,
+          38.9799343
+        ]
+      },
+      "id": "node/8975759235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8975759238",
+        "addr:city": "College Park",
+        "addr:housenumber": "4513",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "College Avenue",
+        "amenity": "restaurant",
+        "brand": "Insomnia Cookies",
+        "brand:wikidata": "Q16997024",
+        "cuisine": "cookie",
+        "name": "Insomnia Cookies",
+        "shop": "pastry"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9370114,
+          38.9818252
+        ]
+      },
+      "id": "node/8975759238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8975759249",
+        "addr:city": "College Park",
+        "addr:housenumber": "4500",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "College Avenue",
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "cuisine": "donut;coffee_shop",
+        "drive_through": "no",
+        "name": "Dunkin'",
+        "opening_hours": "07:00-19:00",
+        "phone": "+1 240-736-9294",
+        "ref": "359226",
+        "takeaway": "yes",
+        "website": "https://locations.dunkindonuts.com/en/md/college-park/4500-college-ave/359226"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.93696,
+          38.9820915
+        ]
+      },
+      "id": "node/8975759249"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10172644051",
+        "amenity": "cafe",
+        "cuisine": "tea",
+        "name": "Möge Tee",
+        "website": "https://www.mogeteeusa.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9340806,
+          38.9911186
+        ]
+      },
+      "id": "node/10172644051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11917031873",
+        "addr:city": "College Park",
+        "addr:housenumber": "7415",
+        "addr:postcode": "20740",
+        "addr:state": "MD",
+        "addr:street": "Baltimore Avenue",
+        "addr:unit": "B",
+        "amenity": "fast_food",
+        "brand": "Popeyes",
+        "brand:wikidata": "Q1330910",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Popeyes",
+        "official_name": "Popeyes Louisiana Kitchen",
+        "opening_hours": "10:00-24:00",
+        "phone": "+1 240-927-5375",
+        "takeaway": "yes",
+        "website": "https://www.popeyes.com/store-locator/store/restaurant_242291"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.93741,
+          38.98149
+        ]
+      },
+      "id": "node/11917031873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12051532569",
+        "addr:housenumber": "7242",
+        "addr:postcode": "20740",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "fast_food",
+        "name": "Little Blue Menu - Chick-fil-A",
+        "website": "https://www.chick-fil-a.com/little-blue-menu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9383,
+          38.9790596
+        ]
+      },
+      "id": "node/12051532569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12663582401",
+        "addr:housenumber": "7326",
+        "addr:postcode": "20740",
+        "addr:street": "Baltimore Avenue",
+        "amenity": "restaurant",
+        "cuisine": "korean",
+        "name": "Honey Pig BBQ",
+        "phone": "240-667-2366",
+        "website": "https://www.honeypigbbq.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9389458,
+          38.9803375
+        ]
+      },
+      "id": "node/12663582401"
+    }
+  ]
+}

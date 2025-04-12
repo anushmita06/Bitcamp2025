@@ -1,0 +1,1852 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-04-12T19:29:44Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258958991",
+        "check_date": "2022-12-03",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9385929,
+          38.9827783
+        ]
+      },
+      "id": "node/258958991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258959404",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9413299,
+          38.9865357
+        ]
+      },
+      "id": "node/258959404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258959446",
+        "check_date": "2021-08-28",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9414588,
+          38.9854712
+        ]
+      },
+      "id": "node/258959446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258959666",
+        "check_date": "2021-08-23",
+        "emergency": "phone",
+        "ref": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9450401,
+          38.9894089
+        ]
+      },
+      "id": "node/258959666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258960616",
+        "check_date": "2021-08-23",
+        "emergency": "phone",
+        "ref": "143"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9498065,
+          38.9874603
+        ]
+      },
+      "id": "node/258960616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258964046",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9488595,
+          38.9861572
+        ]
+      },
+      "id": "node/258964046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258964073",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9452984,
+          38.9835248
+        ]
+      },
+      "id": "node/258964073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258964074",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9428952,
+          38.9843254
+        ]
+      },
+      "id": "node/258964074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/258964129",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9414414,
+          38.9824246
+        ]
+      },
+      "id": "node/258964129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259042043",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9446369,
+          38.986412
+        ]
+      },
+      "id": "node/259042043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259451411",
+        "check_date": "2024-01-25",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9409684,
+          38.9874652
+        ]
+      },
+      "id": "node/259451411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/259644976",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9512415,
+          38.9884604
+        ]
+      },
+      "id": "node/259644976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/260087822",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9395143,
+          38.9845797
+        ]
+      },
+      "id": "node/260087822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/260091116",
+        "check_date": "2023-02-19",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.942097,
+          38.9818942
+        ]
+      },
+      "id": "node/260091116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/260320255",
+        "check_date": "2023-02-19",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9405741,
+          38.9817222
+        ]
+      },
+      "id": "node/260320255"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269935009",
+        "check_date": "2022-12-03",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9390209,
+          38.9823676
+        ]
+      },
+      "id": "node/269935009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269936050",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.934252,
+          38.9838158
+        ]
+      },
+      "id": "node/269936050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269936465",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9368099,
+          38.9849905
+        ]
+      },
+      "id": "node/269936465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269936613",
+        "check_date": "2021-08-11",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9325033,
+          38.9835668
+        ]
+      },
+      "id": "node/269936613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269937168",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9412109,
+          38.9835558
+        ]
+      },
+      "id": "node/269937168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269937477",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9417508,
+          38.9828534
+        ]
+      },
+      "id": "node/269937477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269937519",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9429091,
+          38.982074
+        ]
+      },
+      "id": "node/269937519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269937657",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9463544,
+          38.9827038
+        ]
+      },
+      "id": "node/269937657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269938267",
+        "check_date": "2021-11-23",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9454411,
+          38.984616
+        ]
+      },
+      "id": "node/269938267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269939139",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9426,
+          38.9865666
+        ]
+      },
+      "id": "node/269939139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269939523",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9394269,
+          38.98695
+        ]
+      },
+      "id": "node/269939523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269939530",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9392183,
+          38.9880319
+        ]
+      },
+      "id": "node/269939530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269939618",
+        "check_date": "2023-02-18",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9394758,
+          38.9885122
+        ]
+      },
+      "id": "node/269939618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269940177",
+        "check_date": "2021-12-10",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9350777,
+          38.9894671
+        ]
+      },
+      "id": "node/269940177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270846752",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9402922,
+          38.992211
+        ]
+      },
+      "id": "node/270846752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270846790",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9401892,
+          38.9919241
+        ]
+      },
+      "id": "node/270846790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270967549",
+        "check_date": "2021-08-23",
+        "emergency": "phone",
+        "ref": "86"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9469951,
+          38.9872928
+        ]
+      },
+      "id": "node/270967549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270967561",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9446754,
+          38.987433
+        ]
+      },
+      "id": "node/270967561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270967624",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9456196,
+          38.9884737
+        ]
+      },
+      "id": "node/270967624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270967767",
+        "emergency": "phone",
+        "ref": "5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9447226,
+          38.9887249
+        ]
+      },
+      "id": "node/270967767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/270967902",
+        "emergency": "phone",
+        "ref": "301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9435505,
+          38.9892279
+        ]
+      },
+      "id": "node/270967902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271019958",
+        "check_date": "2024-03-07",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9371074,
+          38.9898769
+        ]
+      },
+      "id": "node/271019958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271021498",
+        "check_date": "2021-06-05",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9353992,
+          38.9931422
+        ]
+      },
+      "id": "node/271021498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271021606",
+        "check_date": "2021-08-19",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9374243,
+          38.9935292
+        ]
+      },
+      "id": "node/271021606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271158844",
+        "check_date": "2021-08-12",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9405774,
+          38.9903587
+        ]
+      },
+      "id": "node/271158844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271158902",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9417904,
+          38.9902512
+        ]
+      },
+      "id": "node/271158902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271158951",
+        "check_date": "2021-08-12",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9411467,
+          38.9899377
+        ]
+      },
+      "id": "node/271158951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271159066",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9410351,
+          38.9892839
+        ]
+      },
+      "id": "node/271159066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271159100",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9418247,
+          38.9892772
+        ]
+      },
+      "id": "node/271159100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271159404",
+        "check_date": "2021-08-23",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.942074,
+          38.9889296
+        ]
+      },
+      "id": "node/271159404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271159679",
+        "check_date": "2021-08-12",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9405119,
+          38.9896234
+        ]
+      },
+      "id": "node/271159679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271161313",
+        "emergency": "phone",
+        "man_made": "flagpole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9339986,
+          38.9902795
+        ]
+      },
+      "id": "node/271161313"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271163935",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9419573,
+          38.9915572
+        ]
+      },
+      "id": "node/271163935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271180713",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9488024,
+          38.9899361
+        ]
+      },
+      "id": "node/271180713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271180897",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9496127,
+          38.9904694
+        ]
+      },
+      "id": "node/271180897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181023",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9479103,
+          38.9917561
+        ]
+      },
+      "id": "node/271181023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181226",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9500406,
+          38.9927152
+        ]
+      },
+      "id": "node/271181226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181517",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9486428,
+          38.9938783
+        ]
+      },
+      "id": "node/271181517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181696",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9474068,
+          38.9941051
+        ]
+      },
+      "id": "node/271181696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181715",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9457335,
+          38.9928878
+        ]
+      },
+      "id": "node/271181715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181842",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9443824,
+          38.9927634
+        ]
+      },
+      "id": "node/271181842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271181964",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9430665,
+          38.9909658
+        ]
+      },
+      "id": "node/271181964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271182009",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.94317,
+          38.991811
+        ]
+      },
+      "id": "node/271182009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271182073",
+        "check_date": "2023-02-18",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9437794,
+          38.9913907
+        ]
+      },
+      "id": "node/271182073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271182449",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9436138,
+          38.9926379
+        ]
+      },
+      "id": "node/271182449"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/274750861",
+        "emergency": "phone",
+        "ref": "96"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9455091,
+          38.9879039
+        ]
+      },
+      "id": "node/274750861"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/292649609",
+        "check_date": "2022-02-07",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.944097,
+          38.991871
+        ]
+      },
+      "id": "node/292649609"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2141601969",
+        "amenity": "police",
+        "name": "Prince George's County Police Department: Special Operations Division: Aviation Section",
+        "operator": "Prince George's County Police Department",
+        "police": "helicopter_unit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9265222,
+          38.9819084
+        ]
+      },
+      "id": "node/2141601969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2462412628",
+        "check_date": "2023-03-01",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9443705,
+          38.9945591
+        ]
+      },
+      "id": "node/2462412628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2463985529",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9425868,
+          38.9962497
+        ]
+      },
+      "id": "node/2463985529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2463985530",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9416508,
+          38.9983051
+        ]
+      },
+      "id": "node/2463985530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2463985532",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9428859,
+          38.9978881
+        ]
+      },
+      "id": "node/2463985532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2463985533",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9417591,
+          38.9970005
+        ]
+      },
+      "id": "node/2463985533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2463985534",
+        "check_date": "2023-03-01",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9440832,
+          38.9939226
+        ]
+      },
+      "id": "node/2463985534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2473083278",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no",
+        "source": "Terpnav"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9442219,
+          38.9824363
+        ]
+      },
+      "id": "node/2473083278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2473083920",
+        "emergency": "phone",
+        "source": "Terpnav"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9414699,
+          38.981424
+        ]
+      },
+      "id": "node/2473083920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6545929169",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9379868,
+          38.991417
+        ]
+      },
+      "id": "node/6545929169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6545931402",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9373893,
+          38.9924974
+        ]
+      },
+      "id": "node/6545931402"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6545931410",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9373866,
+          38.9915734
+        ]
+      },
+      "id": "node/6545931410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6548069381",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.93892,
+          38.9822887
+        ]
+      },
+      "id": "node/6548069381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6549791747",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9408517,
+          38.981952
+        ]
+      },
+      "id": "node/6549791747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6549807649",
+        "emergency": "phone",
+        "ref": "312"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9489074,
+          38.9870885
+        ]
+      },
+      "id": "node/6549807649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6549807655",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9485144,
+          38.9864995
+        ]
+      },
+      "id": "node/6549807655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6575635924",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9365451,
+          38.9888418
+        ]
+      },
+      "id": "node/6575635924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8484140316",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.935717,
+          38.9786006
+        ]
+      },
+      "id": "node/8484140316"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8790500835",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9322339,
+          38.9830317
+        ]
+      },
+      "id": "node/8790500835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8790500840",
+        "emergency": "phone",
+        "ref": "145"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9329432,
+          38.9831787
+        ]
+      },
+      "id": "node/8790500840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8790603541",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.933799,
+          38.9844783
+        ]
+      },
+      "id": "node/8790603541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8793198603",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9419006,
+          38.9801531
+        ]
+      },
+      "id": "node/8793198603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8981471135",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9376069,
+          38.98343
+        ]
+      },
+      "id": "node/8981471135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8999975028",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.931976,
+          38.9807633
+        ]
+      },
+      "id": "node/8999975028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9032970181",
+        "camera:mount": "pole",
+        "camera:type": "dome",
+        "emergency": "phone",
+        "man_made": "surveillance",
+        "ref": "84",
+        "surveillance:type": "camera"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9349656,
+          38.986113
+        ]
+      },
+      "id": "node/9032970181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966435498",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9342222,
+          38.9935417
+        ]
+      },
+      "id": "node/9966435498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966435499",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9335404,
+          38.9947068
+        ]
+      },
+      "id": "node/9966435499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966442014",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9348773,
+          38.9903276
+        ]
+      },
+      "id": "node/9966442014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966442015",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9357517,
+          38.9910092
+        ]
+      },
+      "id": "node/9966442015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966442016",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9354195,
+          38.990155
+        ]
+      },
+      "id": "node/9966442016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966489084",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9358759,
+          38.992743
+        ]
+      },
+      "id": "node/9966489084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966489086",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9372351,
+          38.9930148
+        ]
+      },
+      "id": "node/9966489086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966489087",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9345953,
+          38.9930405
+        ]
+      },
+      "id": "node/9966489087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966511750",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9362696,
+          38.9897292
+        ]
+      },
+      "id": "node/9966511750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966524630",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9341147,
+          38.9898885
+        ]
+      },
+      "id": "node/9966524630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966528069",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9365541,
+          38.9902201
+        ]
+      },
+      "id": "node/9966528069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966555818",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9286416,
+          38.9893268
+        ]
+      },
+      "id": "node/9966555818"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966593246",
+        "check_date": "2021-12-10",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9359494,
+          38.9897214
+        ]
+      },
+      "id": "node/9966593246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966593251",
+        "check_date": "2021-12-10",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.935975,
+          38.9897099
+        ]
+      },
+      "id": "node/9966593251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9966593252",
+        "check_date": "2021-12-10",
+        "emergency": "phone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.935998,
+          38.9897016
+        ]
+      },
+      "id": "node/9966593252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593461",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9457751,
+          38.9828285
+        ]
+      },
+      "id": "node/10962593461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593462",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.944081,
+          38.9811403
+        ]
+      },
+      "id": "node/10962593462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593464",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9481091,
+          38.9841118
+        ]
+      },
+      "id": "node/10962593464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593466",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9454868,
+          38.9821979
+        ]
+      },
+      "id": "node/10962593466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593467",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9442789,
+          38.9815922
+        ]
+      },
+      "id": "node/10962593467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593469",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9449259,
+          38.9817616
+        ]
+      },
+      "id": "node/10962593469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593470",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9457153,
+          38.9814666
+        ]
+      },
+      "id": "node/10962593470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593471",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9479406,
+          38.9830929
+        ]
+      },
+      "id": "node/10962593471"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962593472",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9476497,
+          38.9825286
+        ]
+      },
+      "id": "node/10962593472"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962609773",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9461432,
+          38.9821004
+        ]
+      },
+      "id": "node/10962609773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962609774",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9455983,
+          38.9833047
+        ]
+      },
+      "id": "node/10962609774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962609775",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9468198,
+          38.9838817
+        ]
+      },
+      "id": "node/10962609775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962609776",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9462025,
+          38.9832985
+        ]
+      },
+      "id": "node/10962609776"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10962613351",
+        "covered": "no",
+        "emergency": "phone",
+        "indoor": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9493349,
+          38.9893874
+        ]
+      },
+      "id": "node/10962613351"
+    }
+  ]
+}
