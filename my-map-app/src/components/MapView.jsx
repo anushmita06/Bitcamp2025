@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import {
   MapContainer,
   TileLayer,
@@ -6,10 +6,15 @@ import {
   Marker,
   Popup,
   useMap,
-  CircleMarker
+  CircleMarker,
+  useMapEvents,
+  Polyline
 } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import PathSelector from './PathSelector';
+import RoutePlanner from './RoutePlanner';
+import { FaTimes } from 'react-icons/fa';
 
 // UMD coordinates
 const UMD_COORDINATES = [38.9869, -76.9426];
@@ -41,19 +46,104 @@ const MapController = ({ selectedPlace }) => {
   return null;
 };
 
+// Component to handle map events
+const MapEventHandler = ({ onMapClick }) => {
+  useMapEvents({
+    click: (e) => {
+      onMapClick(e);
+    }
+  });
+  return null;
+};
+
 const MapView = ({ selectedPlace }) => {
   const [geoData, setGeoData] = useState(null);
   const [safetyData, setSafetyData] = useState(null);
+  const [pathFilters, setPathFilters] = useState({
+    steep: true,
+    shaded: true,
+    foodNearby: true,
+    safe: true
+  });
+  const [filteredGeoData, setFilteredGeoData] = useState(null);
+  const [highlightedPath, setHighlightedPath] = useState(null);
+  const [route, setRoute] = useState(null);
+  const geoJsonRef = useRef(null);
 
+  // Fetch data on component mount
   useEffect(() => {
     fetch('/enrichedPaths.geojson')
       .then((res) => res.json())
-      .then((data) => setGeoData(data));
+      .then((data) => {
+        setGeoData(data);
+        setFilteredGeoData(data);
+      });
 
     fetch('/safety.geojson')
       .then((res) => res.json())
       .then((data) => setSafetyData(data));
   }, []);
+
+  // Filter paths based on selected filters
+  useEffect(() => {
+    if (!geoData) return;
+
+    const filtered = {
+      ...geoData,
+      features: geoData.features.filter(feature => {
+        const props = feature.properties;
+        
+        // Check if the path matches any of the selected filters
+        return (
+          (pathFilters.steep && props.steep) ||
+          (pathFilters.shaded && props.shaded) ||
+          (pathFilters.foodNearby && props.food_nearby) ||
+          (pathFilters.safe && props.safe)
+        );
+      })
+    };
+
+    setFilteredGeoData(filtered);
+  }, [geoData, pathFilters]);
+
+  // Handle filter changes from PathSelector
+  const handleFilterChange = useCallback((filters) => {
+    setPathFilters(filters);
+  }, []);
+
+  // Handle route changes from RoutePlanner
+  const handleRouteChange = useCallback((newRoute) => {
+    setRoute(newRoute);
+  }, []);
+
+  // Handle map click to clear highlighted path
+  const handleMapClick = useCallback(() => {
+    setHighlightedPath(null);
+  }, []);
+
+  // Handle path click to highlight it
+  const handlePathClick = useCallback((e) => {
+    const layer = e.target;
+    const feature = layer.feature;
+    
+    // Set the highlighted path
+    setHighlightedPath(feature);
+    
+    // Style the clicked path
+    layer.setStyle({
+      weight: 6,
+      color: '#FF5722',
+      opacity: 1
+    });
+    
+    // Bring the layer to front
+    layer.bringToFront();
+  }, []);
+
+  // Reset highlighted path when filters change
+  useEffect(() => {
+    setHighlightedPath(null);
+  }, [pathFilters]);
 
   return (
     <div className="map-container" style={{ height: '100vh', width: '100%' }}>
@@ -73,16 +163,29 @@ const MapView = ({ selectedPlace }) => {
         />
 
         {/* Enriched path data with popups */}
-        {geoData && (
+        {filteredGeoData && (
           <GeoJSON
-            data={geoData}
-            style={(feature) => ({
-              color: feature.properties.steep ? 'red' :
-                     feature.properties.shaded ? 'green' :
-                     feature.properties.food_nearby ? 'orange' :
-                     'gray',
-              weight: 4
-            })}
+            ref={geoJsonRef}
+            data={filteredGeoData}
+            style={(feature) => {
+              // If this is the highlighted path, give it special styling
+              if (highlightedPath && highlightedPath.properties.id === feature.properties.id) {
+                return {
+                  weight: 6,
+                  color: '#FF5722',
+                  opacity: 1
+                };
+              }
+              
+              // Otherwise use the default styling based on properties
+              return {
+                color: feature.properties.steep ? 'red' :
+                       feature.properties.shaded ? 'green' :
+                       feature.properties.food_nearby ? 'orange' :
+                       'gray',
+                weight: 4
+              };
+            }}
             onEachFeature={(feature, layer) => {
               const tags = [];
 
@@ -96,7 +199,22 @@ const MapView = ({ selectedPlace }) => {
                 : `No tags for this path`;
 
               layer.bindPopup(message);
+              
+              // Add click event to highlight the path
+              layer.on({
+                click: () => handlePathClick({ target: layer })
+              });
             }}
+          />
+        )}
+
+        {/* Route between buildings */}
+        {route && (
+          <Polyline
+            positions={route.geometry.coordinates.map(coord => [coord[1], coord[0]])}
+            color={route.properties.color}
+            weight={route.properties.weight}
+            opacity={0.8}
           />
         )}
 
@@ -131,7 +249,41 @@ const MapView = ({ selectedPlace }) => {
         )}
 
         <MapController selectedPlace={selectedPlace} />
+        <MapEventHandler onMapClick={handleMapClick} />
       </MapContainer>
+
+      {/* Path selector component */}
+      <PathSelector onFilterChange={handleFilterChange} />
+      
+      {/* Route planner component */}
+      <RoutePlanner onRouteChange={handleRouteChange} selectedPlace={selectedPlace} />
+      
+      {/* Highlighted path info panel */}
+      {highlightedPath && (
+        <div className="path-info-panel">
+          <div className="path-info-header">
+            <h3>Path Details</h3>
+            <button 
+              className="close-button"
+              onClick={() => setHighlightedPath(null)}
+              aria-label="Close path info"
+            >
+              <FaTimes />
+            </button>
+          </div>
+          <div className="path-info-content">
+            <div className="path-info-tags">
+              {highlightedPath.properties.steep && <span className="path-tag steep">⛰️ Steep</span>}
+              {highlightedPath.properties.shaded && <span className="path-tag shaded">🌳 Shaded</span>}
+              {highlightedPath.properties.food_nearby && <span className="path-tag food">🍔 Food Nearby</span>}
+              {highlightedPath.properties.safe && <span className="path-tag safe">🛟 Safe Path</span>}
+            </div>
+            <div className="path-info-description">
+              <p>This path has been selected for your route.</p>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

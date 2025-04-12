@@ -70,6 +70,7 @@ function App() {
           throw new Error('Weather API key is missing');
         }
         
+        // Use a simpler endpoint that's more likely to work
         let url;
         
         if (selectedPlace) {
@@ -80,22 +81,38 @@ function App() {
           url = `https://api.openweathermap.org/data/2.5/weather?q=College Park,MD&appid=${apiKey}&units=imperial`;
         }
         
-        console.log('Fetching weather from:', url);
+        // Use a more reliable approach with fetch
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
         
-        const response = await fetch(url);
+        const response = await fetch(url, {
+          method: 'GET',
+          mode: 'cors',
+          headers: {
+            'Accept': 'application/json',
+          },
+          signal: controller.signal
+        });
+        
+        clearTimeout(timeoutId);
         
         if (!response.ok) {
-          const errorText = await response.text();
-          console.error('Weather API error:', response.status, errorText);
-          throw new Error(`Weather data fetch failed: ${response.status}`);
+          throw new Error(`Weather API returned ${response.status}`);
         }
         
         const data = await response.json();
         console.log('Weather data received:', data);
+        
+        // Validate the data structure
+        if (!data.main || !data.weather || !data.weather[0]) {
+          throw new Error('Invalid weather data format');
+        }
+        
         setWeatherData(data);
       } catch (error) {
         console.error('Error fetching weather:', error);
         setWeatherError('Failed to load weather data');
+        setWeatherData(null); // Clear any previous data
       } finally {
         setWeatherLoading(false);
       }
@@ -121,10 +138,13 @@ function App() {
             {getWeatherIcon(weatherData?.weather?.[0]?.description)}
             <div className="weather-toggle-info">
               <p className="weather-toggle-temp">
-                {weatherLoading ? 'Loading...' : weatherError ? 'Error' : weatherData ? `${Math.round(weatherData.main.temp)}°F` : '--°F'}
+                {weatherLoading ? 'Loading...' : 
+                 weatherError ? '--°F' : 
+                 weatherData ? `${Math.round(weatherData.main.temp)}°F` : '--°F'}
               </p>
               <p className="weather-toggle-desc">
-                {weatherData?.weather?.[0]?.description || 'Weather'}
+                {weatherError ? 'Weather' : 
+                 weatherData?.weather?.[0]?.description || 'Weather'}
               </p>
             </div>
           </button>
