@@ -1,42 +1,551 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-@keyframes logo-spin {
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+/* Map container styles */
+.map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Custom marker styles */
+.custom-marker {
+  width: 30px;
+  height: 30px;
+}
+
+.marker-pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: #4a5568;
+  position: relative;
+  transform: rotate(-45deg);
+  margin: -15px -15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.marker-pin::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin: 3px 0 0 3px;
+  background: #fff;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Popup styles */
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Fix for Leaflet marker icons */
+.leaflet-marker-icon {
+  background: none;
+  border: none;
+}
+
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png);
+}
+
+.leaflet-default-shadow-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png);
+}
+
+/* Sidebar styles */
+.sidebar-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 90%;
+  width: 350px;
+  background-color: rgba(245, 245, 245, 0.85);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 0 1.5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  transform: translateX(100%) translateY(-50%);
+  z-index: 1000;
+  border-radius: 12px 0 0 12px;
+  backdrop-filter: blur(10px);
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-container.open {
+  transform: translateX(0) translateY(-50%);
+}
+
+/* Create a hover trigger area on the right edge of the screen */
+.sidebar-trigger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  z-index: 999;
+}
+
+.sidebar-indicator {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 120px;
+  background-color: rgba(220, 220, 220, 0.9);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent rgba(100, 100, 100, 0.8) transparent transparent;
+}
+
+.sidebar-content {
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: rgba(245, 245, 245, 0.85);
+  border-radius: inherit;
+}
+
+.weather-toggle-container {
+  position: absolute;
+  top: 22px;
+  left: 60px;
+  z-index: 1000;
+}
+
+.weather-toggle-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 0 1.5px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.weather-toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.weather-toggle-button.enabled {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.weather-toggle-button.disabled {
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+}
+
+.weather-toggle-button svg {
+  width: 22px;
+  height: 22px;
+  color: #4a5568;
+  margin-right: 2px;
+}
+
+.weather-toggle-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+
+.weather-toggle-temp {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.weather-toggle-desc {
+  font-size: 10px;
+  color: #4a5568;
+  text-align: left;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* Hide the separate weather widget since we're integrating it into the toggle */
+.weather-widget {
+  display: none;
+}
+
+.weather-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin: 0;
+}
+
+.weather-desc {
+  font-size: 1rem;
+  color: #4a5568;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.weather-detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.weather-detail-label {
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.weather-detail-value {
+  color: #2d3748;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Search bar styles */
+.search-container {
+  position: relative;
+  width: 100%;
 }
 
-.card {
-  padding: 2em;
+.search-input-container {
+  position: relative;
+  width: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.search-input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(245, 245, 245, 0.95);
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.clear-button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  z-index: 10;
+}
+
+.clear-button:hover {
+  color: #333;
+}
+
+.loading-spinner {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  z-index: 10;
+}
+
+.error-message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  padding: 12px;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 8px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 50;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-align: left;
+}
+
+.suggestion-item:hover {
+  background-color: #f3f4f6;
+}
+
+.suggestion-icon {
+  color: #666;
+  font-size: 16px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.suggestion-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.suggestion-name {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.suggestion-address {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Recents List Styles */
+.recents-list-container {
+  margin-top: 0.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recents-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #eee;
+}
+
+.recents-icon {
+  color: #666;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.recents-title {
+  font-weight: 500;
+  color: #333;
+  flex-grow: 1;
+  font-size: 0.9rem;
+}
+
+.recents-count {
+  color: #666;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.clear-all-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.clear-all-button:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.recents-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0.25rem;
+}
+
+.recents-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.recent-item:hover {
+  background-color: #f5f5f5;
+}
+
+.recent-item-content {
+  flex-grow: 1;
+}
+
+.recent-item-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.recent-item-address {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.125rem;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-size: 0.8rem;
+}
+
+.remove-button:hover {
+  color: #ff4444;
+  background-color: #fff0f0;
+}
+
+.no-recent-searches {
+  padding: 0.75rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  font-size: 0.9rem;
 }
