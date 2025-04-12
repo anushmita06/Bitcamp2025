@@ -9,11 +9,13 @@ function App() {
     <div className="relative h-screen w-screen overflow-hidden bg-white">
       <MapView />
 
+      {/* UI Over Map */}
       <div className="absolute top-0 left-0 right-0 z-10 px-4 pt-4 space-y-3">
         <TopBar />
         <SearchBar />
       </div>
 
+      {/* Recents Drawer */}
       <RecentsDrawer />
     </div>
   );

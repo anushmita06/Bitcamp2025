@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
+// Fix default marker icons
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -11,14 +12,14 @@ L.Icon.Default.mergeOptions({
 });
 
 function MapView() {
-  const center = [38.9897, -76.9378]; // fallback UMD coords
+  const center = [38.9897, -76.9378]; // fallback to UMD coords
 
   return (
     <MapContainer
       center={center}
       zoom={16}
       scrollWheelZoom={true}
-      className="h-full w-full z-0"
+      className="absolute top-0 left-0 h-full w-full z-0"
     >
       <TileLayer
         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
